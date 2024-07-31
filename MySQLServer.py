@@ -17,11 +17,10 @@ def create_database():
     except Exception as e:
         print(f"Failed to create database: {e}")
     finally:
-        if connection.is_connected():
+        if 'connection' in locals() and connection.is_connected():
             cursor.close()
             connection.close()
             print("MySQL connection is closed")
 
 if __name__ == "__main__":
     create_database()
-
