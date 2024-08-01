@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS Orders (
     order_date DATE,
     status VARCHAR(50),
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+    quantity DOUBLE
 );
 
 CREATE TABLE IF NOT EXISTS Order_Details (
