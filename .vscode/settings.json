@@ -9,11 +9,11 @@
             "server": "localhost",
             "port": 33060,
             "driver": "MySQL",
-            "name": "mySQL Local",
+            "name": "MySQL local",
             "database": "alx_book_store",
             "username": "root",
             "password": "#44bulldogs",
-            "connectionTimeout": 30
+            "connectionTimeout": 50
         }
     ]
 }
